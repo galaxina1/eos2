@@ -1,0 +1,26 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule accueil$ index.php?page=accueil
+RewriteRule ^hotel$ index.php?page=hotel
+RewriteRule ^restaurant$ index.php?page=restaurant 
+RewriteRule ^brasserie$ index.php?page=brasserie
+RewriteRule ^bar$ index.php?page=bar
+RewriteRule ^snack$ index.php?page=snack
+RewriteRule ^actualites$ index.php?page=actualites 
+RewriteRule ^contact$ index.php?page=contact
+RewriteRule ^moncompte$ index.php?page=moncompte
+RewriteRule ^inscription$ index.php?page=inscription
+RewriteRule ^admin$ index.php?page=admin
+RewriteRule ^ensavoirplus$ index.php?page=ensavoirplus
+RewriteRule ^admin-photos$ index.php?page=admin&photos
+RewriteRule ^admin-annonces$ index.php?page=admin&annonces
+RewriteRule ^admin-actualites$ index.php?page=admin&actualites
+RewriteRule ^admin-contacts$ index.php?page=admin&contacts
+RewriteRule ^mentionslegales$ index.php?page=mentionslegales
+RewriteRule ^honoraires$ index.php?page=honoraires
+RewriteRule ^confidentialite$ index.php?page=confidentialite
+RewriteRule ^cookies$ index.php?page=cookies
+RewriteRule ^([a-z]+)-([0-9]+)-([0-9]+)$ index.php?page=$1&type=$2&id=$3
+RewriteRule ^([a-z]+)-fav-([0-9]+)-([0-9]+)$ index.php?page=$1&type=$2&favoris=$3
+RewriteRule ^([a-z]+)-([0-9]+)-alaune-([0-9]+)$ index.php?page=$1&type=$2&alaune=$3
+
